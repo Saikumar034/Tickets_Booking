@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .python{
+        margin-left: 150px;
+        display: table-caption;
+        border: 2px solid;
+        padding: 27px;
+        width: 500px;
+        height: 500px;
+        margin-top: 40px;
+        background-color: ivory;
+        border-radius: 10p
+        }
+        input{
+        height: 20px;
+        width: 230px;
+        border-radius: 4px;
+        border-color: lime;
+        margin-top:30px;
+        }
+        .login{
+            height: 36px;
+            width: 246px;
+            font-family: fantasy;
+            border-color: black;
+            background-color: darkgoldenrod;
+            margin-top: 55px;
+            padding: 0px;
+            margin-left: 94px;
+        }
+        a{
+               text-decoration: none;
+                margin-left: 346px;
+                position: relative;
+                top: -238px;
+                border: 2px solid;
+                padding: 5px;
+                display: inline-block;
+                width: 236px;
+                text-align: center;
+                font-family: fantasy;
+                color: black;
+                background-color: fuchsia;
+
+}
+        label{
+            font-size: 20px;
+            font-family: sans-serif;
+            color: black;
+    }
+        h2{
+        padding-left: 392px;
+        position: relative;
+        top: 35px;
+        font-family: fangsong;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        }
+        #login {
+      position: relative;
+    top: -163px;
+    margin-left: -253px;
+        }
+        img{
+        float: right;
+        position: relative;
+        top: -552px;
+        padding-right: 115px;
+        height: 512px;
+        width: 781px;
+
+        }
+        body{
+        background-image: url("{% static 'Images/train.jpg' %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+        }
+        form{
+        padding-left: 70px;
+        }
+        h1{
+            float: right;
+            position: relative;
+            top: -708px;
+            margin-right: 550px;
+            font-family: math;
+            background-color: ghostwhite;
+            padding: 6px;
+        }
+    </style>
+</head>
+<body>
+<h2>Login</h2>
+<div class="python">
+<form method="POST">
+  {% csrf_token %}
+  {{form.as_p}}
+  <input type="submit" value="Login" class="login">
+</form>
+</div>
+<div>
+<a href="/register">Register</a>
+<a href="#" id="login">Agent Login</a>
+</div>
+<div>
+    <h1>INDIAN RAILWAYS</h1>
+</div>
+<table>
+    <tr>
+        <th>Safety</th>
+        <th>Security</th>
+        <th>Puncuality</th>
+    </tr>
+</table>
+
+
+
+</body>
+
+</html>

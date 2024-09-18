@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'css/demo.css' %}">
+
+
+</head>
+
+<body>
+    <nav>
+        <a href="#" class="ixigo" style="border: 2px soid;">Ixigo</a><br>
+        <div class="root">
+            <a href="#"><img src="{% static 'Images/icons8-new-64.png' %}">Offers</a>
+            <a href="#"><img src="{% static 'Images/icons8-customer-support-53.png' %}">Customer Service</a>
+            <a href="#"><img src="{% static 'Images/icons8-authentication-48.png' %}">Login/Signup</a><br><br><br>
+        </div>
+    </nav>
+    <a href="#" class="off">Upto 30% off</a>
+    <div class="main-box">
+        <div class="django">
+            <a href="#"><img class="zoom" src="{% static 'images/flight tracker.png' %}" alt="" srcset=""> Flights</a>
+            <a href="#"><img class="zoom" src="{% static 'images/icons8-hotel-64.png' %}" alt="" srcset="">Hotels</a>
+            <a href="#"><img class="zoom" src="{% static 'images/icons8-bus-64.png' %}" alt="" srcset="">Buses</a><br><br><br>
+            <a href="#"><img class="zoom" src="{% static 'images/icons8-train-48.png' %}" alt="" srcset="">Trains</a>
+        </div>
+        <div class="rest">
+            <a href="#">BookFlights</a>
+            <a href="#">Buses</a>
+            <a href="">Flights</a>
+        </div>
+    </div>
+    <div class="name">
+        <div class="mech">
+            <div class="api">
+                <a href="#" class="trip">Oneway</a>
+                <a href="#" class="trip">Round Trip</a>
+            </div>
+        </div>
+        <div class="inputbox">
+            <input type="text" value="" name="" placeholder="From">
+            <input type="text" value="" name="" placeholder="To">
+            <input type="date" value="" name="">
+            <input type="" value="" name="" placeholder="Return">
+            <input type="" value="" name="" placeholder="Travellers&Class">
+            <input type="button" value="Search>" name="" style="background-color: peru;">
+
+        </div>
+        <div class="Special-fare">
+            <div>Speacial Fare: </div>
+            <div><a href="#" id="dots" title="For travellers 12 years and above">Student</a></div>
+            <div><a href="#" id="dot" title="For travellers 60 years and above">Senior Citizen</a></div>
+            <div><a href="#" id="doting"
+                    title="For serving and retired personal of armed forces & paramillatry forces,and their recognised dependants">Arm
+                    Forces</a></div>
+            <div class="shravs">
+                <input type="checkbox" id="" name="">
+                <label for="">Add hotel and save up to 30%</label>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="text ">
+        <h5>Do more with Ixigo</h5>
+        <div>
+            <div class="out">
+                <a href="#"><img class="icons" src="{% static 'images/flight tracker.png' %}"class="flight" alt="" srcset="">Flight Tracker</a>
+                <a href="#"><img class="icons" src="{% static 'images/icons8-credit-card-80.png' %}" alt="" srcset="">CreditCard</a>
+                <a href="#"><img class="icons" src="{% static 'images/icons8-visa-128.png' %}" alt="" srcset="">BookVisa</a>
+                <a href="#"><img class="icons" src="{% static 'images/icons8-plan-100.png' %}" alt="" srcset="">Plan</a>
+                <a href="#"><img class="icons" src="{% static 'images/icons8-car-80.png' %}" alt="" srcset="">CarRentals</a>
+                <a href="#"><img class="icons" src="{% static 'images/group.png' %}" alt="" srcset="">GroupBooking</a>
+                <a href="#"><img class="icons" src="{% static 'images/icons8-london-cab-96.png' %}" alt="" srcset="">AirportCabs</a>
+                <a href="#"><img class="icons" src="{% static 'images/alert.png' %}" alt="" srcset="">Fair Alerts</a>
+            </div>
+        </div>
+    </div>
+    <h2>Why Book with Ixigo ?</h2>
+    <div class="testing">
+        <p class="dell"" style=" background-color: rgb(220, 221, 224);" title="instant&full refund with assured"><img src="{% static 'images/icons8-refund-80.png' %}" class="css" alt="" srcset="">Instand and full refund <span
+                style="color:blue;">With assured</span></p>
+        <p class="dell" style="background-color: bisque;" title="save upto 40% with Intelligent fare alerts"><img
+                src="{% static 'images/icons8-alert-100.png' %}" class="css" alt="" srcset=""><span style="color: blue;">Save upto
+                40% with</span>Intelligent fare alerts</p>
+        <p class="dell" style="background-color:burlywood ;" title="Track flight delays,boarding gate & bagage belt">
+            <img src="{% static 'images/flight tracker.png' %}" class="css" alt="" srcset="">Track flight delays,<br>boarding gate
+            <br>& bagage belt</p>
+        <p class="dell" style="background-color: blanchedalmond;" title="24*7 Coustmer support"><img
+                src="{% static 'images/icons8-authentication-48.png' %}" class="css" alt="" srcset=""><span
+                style="color: blue;">24*7</span>Coustmer support</p>
+
+    </div>
+    <h2>Popular Domestic Airlines</h2>
+    <div class="words">
+        <a href="#"><img class="rest" src="{% static 'images/6E.webp' %}" alt="" srcset="">IndiG0</a>
+        <a href="#"><img class="rest" src="{% static 'images/AI.webp' %}" alt="" srcset="">Air India</a>
+        <a href="#"><img class="rest" src="{% static 'images/IX.webp' %}" alt="" srcset=""">Air India Express</a>
+        <a href=" #"><img class="rest" src="{% static 'images/QP.webp' %}" alt="" srcset="">Akasa Air</a>
+        <a href="#"><img class="rest" src="{% static 'images/UK.webp' %}" alt="" srcset="">Vistara</a>
+        <a href="#"><img class="rest" src="{% static 'images/SG.webp' %}" alt="" srcset="">Spice Jet</a>
+    </div>
+    </div>
+
+    <div>
+        <div class="jpg">
+            <h3>Download the app</h3>
+            <div class="ram">
+                <img src="{% static 'images/train ticket.webp' %}" alt="" id="lost"
+                    style="float: right;width: 50px;height: 150px; width: 150px;position: relative;top: -23px;">
+
+                <ul>
+                    <li>Upto 25% Off on App Code: GETAPP</li>
+                    <li>Auto Web Checkin with Boarding Pass.</li>
+                    <li>Track Flight Status, Boarding Gate, Baggage Belt etc.</li>
+                </ul>
+                <div>
+                    <img alt="" src="{% static 'images/scanner.png' %}" class="scan">
+                </div>
+                <div class="playstore">
+                    <img alt="" src="{% static 'images/playstore.webp' %}" >
+                    <img alt="" src="{% static 'images/applestore.webp' %}" >
+                </div>
+                <div>
+                    <h5 class="example">4.5</h5>
+                    <img alt="" src="{% static 'images/rating.png' %}" class="vizag">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h3 style="position: relative;top: 10px;display: table-footer-group;">About Ixigo</h3>
+    <div class="about">
+        <p>Launched in 2007, ixigo is a technology company focused on empowering Indian travellers to plan, book and
+            manage their trips across rail, air, buses and hotels. We assist travellers in making smarter travel
+            decisions by leveraging artificial intelligence, machine learning, and data science led innovations on our
+            OTA platforms, comprising our websites and mobile applications. Our vision is to become the most
+            customer-centric travel company, by offering the best customer experience to our users. Our focus on travel
+            utility and customer experience for travellers in the 'next billion user' segment is driven by technology,
+            cost-efficiency and our culture of innovation has made us India's leading travel ecosystem for the 'next
+            billion users'.</p>
+        <p >Our OTA platforms allow travellers to book train tickets, flight
+            tickets, bus tickets, hotels and cabs, while providing travel utility tools and services developed using
+            in-house proprietary algorithms and crowd-sourced information, including train PNR status and confirmation
+            predictions, train seat availability alerts, train running status updates and delay predictions,<span  style="color: blue;">
+               flight status updates,</span> bus running status, pricing and availability alerts,
+            deal discovery, destination content, personalized recommendations, instant fare alerts, and automated
+            customer support services. Read our travel stories where we cover everything from– flight news, latest
+            travel news, Indian Railways reservation updates and more. Let us help you plan your next vacation with
+            our<span style="color: blue;"> trip planner.</span></p>
+    </div>
+    <section>
+        <div class="bus">
+            <h1 style="padding-left: 20px;">Here's how we can help you:</h1>
+            <table id="table">
+                <tr>
+                    <td>Flights</td>
+                    <td>
+                        Book domestic as well as international flights on ixigo. Check <a href=""
+                            style="color: blue;">Flight Status</a> for domestic or international flights
+                    </td>
+                </tr>
+                <tr>
+                    <td>Trains</td>
+                    <td>Search and book train tickets. Check <a href="#" style="color: blue;">PNR status & Train running
+                            status.</a></td>
+                </tr>
+                <tr>
+                    <td>Bus Booking</td>
+                    <td>Choose from different types of buses. From state buses to luxury volvos, book them all on ixigo.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hotels</td>
+                    <td>Find thousands of <a href="#" style="color: blue;">cheap hotels</a> on ixigo. We have something
+                        for every budget.</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <div class="flightbook">
+        <h2>Flight Booking on ixigo</h2>
+        <p style="font-size: 18px;">ixigo flights app and website simplify flight booking. Travellers can finalise their
+            bookings in just a matter of a few clicks. It's both simple and fast. Get free cancellation on your flight
+            tickets. Also, we have multiple flight booking offers to help you save money.</p>
+    </div>
+    <div class="flightbooking">
+        <h2>Domestic Flights on ixigo</h2>
+        <p style="font-size: 18px;">We offer Cancellation protection on domestic flights. Get the cheapest domestic
+            airfare with help of fare drop alerts. Our technology helps travellers book cheap flights, hotels and cabs
+            on arrival or departure.</p>
+    </div>
+    <div class="flightbookings">
+        <h2>International Flights on ixigo</h2>
+        <p style="font-size: 18px;">Our helpful filters will assist in finding a suitable international destination for
+            your next vacation. Get personalised recommendations on international flight ticket booking and hotels. All
+            your travel needs are fulfilled in a few seconds.</p>
+        <p style="font-size: 18px;">Here are some trending international destinations from popular Indian cities:</p>
+
+    </div>
+    <div class="laptop">
+        <table style="background-color: cornsilk;">
+            <tr>
+                <td><a href="#">Delhi to Canada Flights</a></td>
+                <td><a href="#">Delhi to Malaysia Flights</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Delhi to Thailand Flights</a></td>
+                <td><a href="#">Delhi to Nepal Flights</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Mumbai to Thailand Flights</a></td>
+                <td><a href="#">Delhi to Turkey Flights</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Mumbai to Canada Flights</a></td>
+                <td><a href="#">Mumbai to Turkey Flights</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Delhi to Vietnam Flights</a></td>
+                <td><a href="#">Mumbai to Vietnam Flights</a></td>
+            </tr>
+        </table>
+    </div>
+    <h5 style="font-size: 14px;">Important links</h5>
+    <div class="ismart">
+        <a href="#" class="double">IRCTC Trains</a>&nbsp;&nbsp;
+        <a href="#" class="double">Tatkal Railway Reservation</a>&nbsp;&nbsp;
+        <a href="#" class="double">PNR Status</a>&nbsp;&nbsp;
+        <a href="#" class="double">Train Running Status</a>&nbsp;&nbsp;
+        <a href="#" class="double">Train Seat Availability</a>&nbsp;&nbsp;
+        <a href="#" class="double">Platform Locator</a>&nbsp;&nbsp;
+        <a href="#" class="double">Vande Bharat Express</a>&nbsp;&nbsp;
+        <a href="#" class="double">IRCTC Cancellation Charges</a>&nbsp;&nbsp;
+        <a href="#" class="double">Flight Booking</a>&nbsp;&nbsp;
+        <a href="#" class="double">International Flights</a>&nbsp;&nbsp;
+        <a href="#" class="double">Student Flight Booking</a>&nbsp;&nbsp;
+        <a href="#" class="double">Armed Forces Flight Booking</a>&nbsp;&nbsp;
+        <a href="" class="double">Senior Citizen Flight Booking</a>&nbsp;&nbsp;
+        <a href="" class="double">Airlines</a>&nbsp;&nbsp;
+        <a href="" class="double">abhibus</a>&nbsp;&nbsp;
+        <a href="" class="double">ConfirmTkt</a>&nbsp;&nbsp;
+        <a href="" class="double">Travel Stories</a>&nbsp;&nbsp;
+    </div>
+    <div class="travel">
+        <div class="lap">
+            <li style="font-size: 14px;"> 2024 Le Travenues Technology Ltd. India. All brands are trademarks of their
+                respective owners.</li>
+            <li><a href="#" class="ringtone">Privacy</a></li>
+            <li><a href="#" class="ringtone">Terms of use</a></li>
+            <li><a href="#" class="ringtone">Carrer</a></li>
+            <li><a href="#" class="ringtone">Coustmer service</a></li>
+            <li><a href="#" class="ringtone">About us</a></li>
+            <li><a href="#" class="ringtone">Investor relations</a></li>
+            <li><a href="#" class="ringtone">CSR</a></li>
+        </div>
+        <div class="sourcepath">
+            <img alt="" src="{% static 'images/icons8-facebook-25.png' %}" title="Facebook">
+            <img alt="" src="{% static 'images/icons8-twitter-24.png' %}" title="Twitter">
+            <img alt="" src="{% static 'images/icons8-instagram-24.png' %}" title="Instagram">
+            <img alt="" src="{% static 'images/icons8-linkedin-24.png' %}" title="Linkdin">
+            <img alt="" src="{% static 'images/icons8-youtube-24.png' %}" title="Youtube">
+        </div>
+    </div>
+
+
+</body>
+
+</html>

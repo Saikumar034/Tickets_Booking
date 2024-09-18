@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .para{
+            border: 2px solid;
+            width: 667px;
+            height: 108px;
+            padding-left: 32px;
+            font-size: 17px;
+            margin-top: 60px;
+        }
+        .paragraph{
+        padding-left:30px;
+        }
+        .login{
+        padding-left: 650px;
+        position: relative;
+        top: 44px;
+        font-size: 21px;
+        color: brown;
+        font-family: fantasy;
+        }
+        .account{
+        position: relative;
+        top: 90px;
+        padding-left: 25px;
+        }
+        form{
+            padding-left: 41px;
+            margin-top: 32px;
+            font-size: 20px;
+            display: table-caption;
+            color:blue;
+        }
+        button{
+        padding: 6px;
+        margin-left: 80px;
+        background-color: red;
+        border-color: blue;
+        font-family: system-ui;
+        width: 110px;
+        color: white;
+        font-size: 20px;
+        }
+        button:hover{
+        transition:20px;
+        }
+        input{
+        block-size: 18px;
+        width: 688px;
+        }
+        .last{
+        display: flex;
+        gap: 320px;
+        padding-left: 38px;
+        position: relative;
+        top: 40px;
+        }
+        .general{
+        padding-left: 38px;
+        display: flex;
+        gap: 258px;
+        position: relative;
+        top: 35px;
+}
+        .information{
+        padding-left: 38px;
+        display: flex;
+        gap: 261px;
+        margin-top: 29px;
+        }
+        .refund{
+            padding-left: 38px;
+            display: flex;
+            gap: 329px;
+        }
+        .person{
+        padding-left:39px;
+        }
+        .total{
+      border: 1px solid;
+    height: 338px;
+    position: relative;
+    top: 30px;
+    font-size: 16px;
+    background-color: black;
+        }
+        a{
+        color:white;
+        }
+        .facebook{
+           display: flex;
+            padding-left: 220px;
+            gap: 50px;
+            border: 1px solid;
+            position: relative;
+            top: 22px;
+            background-color: deepskyblue;
+
+        }
+        .online{
+            height: 63px;
+            width: 63px;
+
+        }
+        .source{
+        border: 2px solid;
+        background-color: lightyellow;
+        border-radius: 15px;
+        }
+        .register{
+        color: black;
+        position: relative;
+        top: -35px;
+        text-decoration: none;
+        font-size: 21px;
+        padding-left: 105px;
+        }
+        .{
+        float: right;
+        position: relative;
+        top: -1060px;
+        padding-right: 219px;
+        }
+        img{
+<!--        float: right;-->
+<!--    position: relative;-->
+<!--    top: -1100px;-->
+<!--    padding-right: 219px;-->
+        }
+        .poster{
+        float: right;
+        position: relative;
+        top: -1030px;
+        padding-right: 241px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div class="source">
+    <img src="{% static 'Images/logo.png' %}" style="padding-left:33px;padding-top: 10px;">
+    <img src="{% static 'Images/logo1.png' %}" style="float: right;padding-right:80px;padding-top: 10px;">
+    <a href="#"  class="register" >Agent Login</a>
+    <a href="/contact"   class="register" >ContactUs</a>
+    <a href="https://www.amazon.in/"   class="register" style="color:red;">DailyDeals</a>
+    <a href="#"   class="register" >Buses</a>
+    <a href="#"   class="register" >Flights</a>
+    <a href="#"   class="register" >Hotels</a>
+<!--    <a href="#"  style="color:black;" class="register">Trains</a>-->
+</div>
+<div>
+
+</div>
+<div>
+<h2 class="account">Create Your IRCTC account</h2>
+    <a href="/login" class="login">Sign In</a>
+</div>
+<div class="paragraph">
+<div class="para">
+    <p>1.Please use valid E-Mail ID, Mobile number and correct personal details in registration<br> form. This may be required for verification purpose</p>
+    <p>2.Garbage / Junk values in profile may lead to deactivation of IRCTC account</p>
+
+</div>
+</div>
+
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+
+    <button type="submit">Submit</button>
+</form>
+<div>
+    <div class="facebook">
+    <h3 style="font-size: 21px;color: white;">Get Connected with us on social networks</h3>
+        <img src="{% static 'Images/facebook.png' %}" title="Faceboook" class="online">
+        <img src="{% static 'Images/instagram.png' %}" title="Instagram" class="online">
+        <img src="{% static 'Images/linkdin.png' %}" title="Linidin" class="online">
+        <img src="{% static 'Images/pintrest.png' %}" title="Pintrest" class="online">
+        <img src="{% static 'Images/telegram.png' %}" title="Telegram" class="online">
+        <img src="{% static 'Images/whatsapp.png' %}" title="Whatsapp" class="online">
+</div>
+
+</div>
+<div class="total">
+<div class="last">
+    <a href="#">IRCTC Trains</a>
+    <a href="#">How To</a>
+    <a href="#" style="padding-left:14px;"> IRCTC eWallet</a>
+    <a href="#" style="padding-left:13px;"> For Newly Migrated Events</a>
+</div><br><br>
+<div class="general">
+   <a href="#">General Information </a>
+    <a href="#" style="padding-left:20px;">IRCTC Official App</a>
+    <a href="#" style="margin-left: -4px;">IRCTC Loyality Programme</a>
+    <a href="#" style="margin-left: -6px;">Mobile Zone</a>
+</div><br><br>
+<div class="information">
+        <a href="#">Important Information</a>
+        <a href="#" style="padding-left:2px;">Advertice with us</a>
+        <a href="#" style="padding-left:15px;">IRCTC-iPAY Payment Gateway</a>
+        <a href="#" style="margin-left:-33px;">Polices</a>
+</div><br><br>
+<div class="refund">
+        <a href="#">Agents</a>
+        <a href="#" style="padding-left:32px;">Refund Rules</a>
+        <a href="#" style="margin-left:-22px">IRCTC Zone</a>
+        <a href="#" style="margin-left:17px;">Ask Disha Chatbot</a>
+</div><br><br>
+<div class="person">
+        <a href="#">Enquires</a>
+        <a href="#" style="padding-left:345px;">Person With Disabillity Facilities</a>
+        <a href="#" style="padding-left:170px;">DMRC Ticket Booking at IRCTC</a>
+        <a href="#" style="float:right;margin-right:129px;">About us</a>
+</div><br><br>
+</div>
+<div class="poster">
+<a href="#" class="hyper"><img src="{% static 'Images/travellers.jpeg' %}"></a>
+</div>
+
+
+
+
+</body>
+</html>
