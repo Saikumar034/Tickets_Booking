@@ -1,0 +1,134 @@
+       .para{
+            border: 2px solid;
+            width: 667px;
+            height: 108px;
+            padding-left: 32px;
+            font-size: 17px;
+            margin-top: 60px;
+        }
+        .paragraph{
+        padding-left:30px;
+        }
+        .login{
+        padding-left: 650px;
+        position: relative;
+        top: 44px;
+        font-size: 21px;
+        color: brown;
+        font-family: fantasy;
+        }
+        .account{
+        position: relative;
+        top: 90px;
+        padding-left: 25px;
+        }
+        form{
+            padding-left: 41px;
+            margin-top: 32px;
+            font-size: 20px;
+            display: table-caption;
+            color:blue;
+        }
+        button{
+        padding: 6px;
+        margin-left: 80px;
+        background-color: red;
+        border-color: blue;
+        font-family: system-ui;
+        width: 110px;
+        color: white;
+        font-size: 20px;
+
+        }
+        input{
+        block-size: 18px;
+        width: 688px;
+        }
+        .last{
+        display: flex;
+        gap: 320px;
+        padding-left: 38px;
+        position: relative;
+        top: 40px;
+        }
+        .general{
+        padding-left: 38px;
+        display: flex;
+        gap: 258px;
+        position: relative;
+        top: 35px;
+}
+        .information{
+        padding-left: 38px;
+        display: flex;
+        gap: 261px;
+        margin-top: 29px;
+        }
+        .refund{
+            padding-left: 38px;
+            display: flex;
+            gap: 329px;
+        }
+        .person{
+        padding-left:39px;
+        }
+        .total{
+      border: 1px solid;
+    height: 338px;
+    position: relative;
+    top: 30px;
+    font-size: 16px;
+    background-color: #c98e8e;
+        }
+        a{
+        color:white;
+        }
+        .facebook{
+           display: flex;
+            padding-left: 220px;
+            gap: 50px;
+            border: 1px solid;
+            position: relative;
+            top: 22px;
+            background-color: #b7bfc1;
+             transition: .3s linear;
+
+        }
+        .facebook:hover{
+        box-shadow: 10px 10px 5px lightblue;
+        }
+        .online{
+            height: 63px;
+            width: 63px;
+
+        }
+        .source{
+        border: 2px solid;
+        background-color: lightyellow;
+        border-radius: 15px;
+        transition: .3s linear;
+        }
+        .source:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+        .register{
+        color: black;
+        position: relative;
+        top: -35px;
+        text-decoration: none;
+        font-size: 21px;
+        padding-left: 105px;
+        }
+        .{
+        float: right;
+        position: relative;
+        top: -1060px;
+        padding-right: 219px;
+        }
+
+        .poster{
+        float: right;
+        position: relative;
+        top: -1030px;
+        padding-right: 241px;
+        }

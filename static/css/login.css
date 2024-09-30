@@ -1,0 +1,33 @@
+a{
+position: relative;
+    top: 20px;
+    text-decoration: none;
+    border: 2px solid;
+    margin-left: 130px;
+    padding: 4px;
+    font-family: fantasy;
+    background-color: firebrick;
+
+}
+label{
+    font-size: 30px;
+    color: currentcolor
+
+}
+input{
+    height: 20px;
+    width: 230px;
+    border-radius: 7px;
+
+}
+.login{
+    margin-left: 130px;
+    font-family: fantasy;
+    background-color: brown;
+    color: darkblue;
+}
+h1{
+text-decoration: underline;
+    color: currentColor;
+
+}
