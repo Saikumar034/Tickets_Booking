@@ -6,9 +6,9 @@
     <title>Title</title>
     <link rel="stylesheet" href="{% static 'css/login.css' %}">
 </head>
-<body style="text-align: center;margin-top: 150px;">
+<body style="text-align: center;">
 <h1>Login</h1>
-<div>
+<div style="text-align: center;">
 <form method="POST">
   {% csrf_token %}
   {{form.as_p}}
@@ -19,12 +19,4 @@
     </div>
 </div>
 </body>
-
-
-
-
-
-
-</body>
-
 </html>

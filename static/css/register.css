@@ -10,7 +10,7 @@
         padding-left:30px;
         }
         .login{
-        padding-left: 650px;
+        margin-left: 650px;
         position: relative;
         top: 44px;
         font-size: 21px;
@@ -46,10 +46,10 @@
         }
         .last{
         display: flex;
-        gap: 320px;
-        padding-left: 38px;
-        position: relative;
-        top: 40px;
+       gap: 320px;
+       padding-left: 38px;
+       position: relative;
+       top: 115px;
         }
         .general{
         padding-left: 38px;
@@ -59,18 +59,24 @@
         top: 35px;
 }
         .information{
-        padding-left: 38px;
-        display: flex;
-        gap: 261px;
-        margin-top: 29px;
+      padding-left: 38px;
+      display: flex;
+      gap: 261px;
+      margin-top: 34px;
+      position: relative;
+      top: 104px;
         }
         .refund{
-            padding-left: 38px;
+            padding-left: 41px;
             display: flex;
             gap: 329px;
+            position: relative;
+            top: 150px;
         }
         .person{
-        padding-left:39px;
+        padding-left: 39px;
+        position: relative;
+        top: 187px;
         }
         .total{
       border: 1px solid;
@@ -86,7 +92,7 @@
         .facebook{
            display: flex;
             padding-left: 220px;
-            gap: 50px;
+            gap: 55px;
             border: 1px solid;
             position: relative;
             top: 22px;
@@ -125,10 +131,9 @@
         top: -1060px;
         padding-right: 219px;
         }
-
-        .poster{
+        .hyper{
         float: right;
-        position: relative;
-        top: -1030px;
-        padding-right: 241px;
+        padding-right: 270px;
+
         }
+

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 {% load static %}
 <head>
     <meta charset="UTF-8">
@@ -25,18 +25,18 @@
 <h2 class="account">Create Your IRCTC account</h2>
     <a href="/login" class="login">Sign In</a>
 </div>
+<a href="#"><img src="{% static 'Images/travellers.jpeg' %}" class="hyper"></a>
 <div class="paragraph">
 <div class="para">
     <p>1.Please use valid E-Mail ID, Mobile number and correct personal details in registration<br> form. This may be required for verification purpose</p>
     <p>2.Garbage / Junk values in profile may lead to deactivation of IRCTC account</p>
 
 </div>
-</div>
 
+</div>
 <form method="POST">
     {% csrf_token %}
     {{form.as_p}}
-
     <button type="submit">Submit</button>
 </form>
 <div>
@@ -47,45 +47,46 @@
         <a href="#"><img src="{% static 'Images/linkdin.png' %}" title="Linidin" class="online"></a>
         <a href="#"><img src="{% static 'Images/pintrest.png' %}" title="Pintrest" class="online"></a>
         <a href="#"><img src="{% static 'Images/telegram.png' %}" title="Telegram" class="online"></a>
-        <a href="#"></a><img src="{% static 'Images/whatsapp.png' %}" title="Whatsapp" class="online"></a>
+        <a href="#"><img src="{% static 'Images/whatsapp.png' %}" title="Whatsapp" class="online"></a>
+         <a href="#"><img src="{% static 'Images/twitter.png' %}" title="Twitter" class="online"></a>
 </div>
 
 </div>
+<nav>
 <div class="total">
 <div class="last">
     <a href="#">IRCTC Trains</a>
     <a href="#">How To</a>
     <a href="#" style="padding-left:14px;"> IRCTC eWallet</a>
     <a href="#" style="padding-left:13px;"> For Newly Migrated Events</a>
-</div><br><br>
+</div>
 <div class="general">
    <a href="#">General Information </a>
     <a href="#" style="padding-left:20px;">IRCTC Official App</a>
     <a href="#" style="margin-left: -4px;">IRCTC Loyality Programme</a>
     <a href="#" style="margin-left: -6px;">Mobile Zone</a>
-</div><br><br>
+</div>
 <div class="information">
         <a href="#">Important Information</a>
         <a href="#" style="padding-left:2px;">Advertice with us</a>
         <a href="#" style="padding-left:15px;">IRCTC-iPAY Payment Gateway</a>
         <a href="#" style="margin-left:-33px;">Polices</a>
-</div><br><br>
+</div>
 <div class="refund">
         <a href="#">Agents</a>
         <a href="#" style="padding-left:32px;">Refund Rules</a>
         <a href="#" style="margin-left:-22px">IRCTC Zone</a>
         <a href="#" style="margin-left:17px;">Ask Disha Chatbot</a>
-</div><br><br>
+</div>
 <div class="person">
         <a href="#">Enquires</a>
         <a href="#" style="padding-left:345px;">Person With Disabillity Facilities</a>
         <a href="#" style="padding-left:170px;">DMRC Ticket Booking at IRCTC</a>
-        <a href="#" style="float:right;margin-right:129px;">About us</a>
-</div><br><br>
+        <a href="#" style="float:right;margin-right:165px;">About us</a>
 </div>
-<div class="poster">
-<a href="#" class="hyper"><img src="{% static 'Images/travellers.jpeg' %}"></a>
-</div>
+    </div>
+</nav>
+
 
 
 
